@@ -32,7 +32,7 @@ const Contador = ({ token, usuarioId }) => {
 
     async function fetchUserTags() {
         try {
-            const response = await axios.get(`http://10.70.131.130:3000/Correo/` + usuarioId,{
+            const response = await axios.get(`https://10.70.131.130:3000/Correo/` + usuarioId,{
                 headers: {
                   Authorization: token,
                 },
