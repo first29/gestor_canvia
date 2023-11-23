@@ -17,7 +17,7 @@ const Login = ({ setToken, setUsuario }) => {
         
         const handleLogin = () => {
             axios
-                .post(`http://10.70.131.130:3000/login`, data)
+                .post(`https://10.70.131.130:3000/login`, data)
                 .then((response) => {
                     const { token } = response.data;
                     setToken(token);
